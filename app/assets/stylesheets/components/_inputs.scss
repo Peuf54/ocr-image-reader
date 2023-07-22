@@ -1,0 +1,12 @@
+@import 'variables';
+
+input[type="text"] {
+    box-shadow: $shadow;
+    border: none;
+    background-color: $secondary-color;
+    padding: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}

@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "scans#new"
-
+  resources :scans, only: %w[new index show create edit]
 end

@@ -28,3 +28,7 @@ a, a:hover, a:visited, a:active {
     color: none;
     text-decoration: none;
 }
+
+*:focus, *:focus-visible, *:focus-within {
+    outline: none !important;
+  }

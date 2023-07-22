@@ -1,10 +1,11 @@
 @import 'variables';
 
-@media (min-width: 400px) {
     .yield-container {
-        width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
 
 @media (min-width: 450px) {

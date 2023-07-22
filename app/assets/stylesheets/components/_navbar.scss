@@ -34,10 +34,7 @@ header {
         list-style-type: none;
         align-items: center;
         justify-content: space-around;
-        @media (max-width: 550px) {
-            justify-content: space-between;
-            padding-inline: 65px;
-        }
+        
     }
 
     .header-login-register-cta {

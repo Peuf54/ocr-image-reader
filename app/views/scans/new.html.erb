@@ -1,0 +1,28 @@
+<div class="yield-container new-scan-container">
+    <h2 class="bold-secondary-title">New Scan</h2>
+
+    <div class="back-plate">
+        <%= form_with id: 'first-form' do |f| %>
+            <%= f.label :title, 'Title', class: 'bold-third-title' %>
+            <%= f.text_field :title, class: 'third-title' %>
+            <%= f.label :image, 'Choose a file...', class: 'third-title file-label' %>
+            <%= f.file_field :image %>
+        <% end %>
+    </div>
+
+    <div class="back-plate">
+        <%= form_with model: @scan, id: 'hidden-form' do |f| %>
+            <h2 class="bold-secondary-title">Title</h2>
+            <%= f.hidden_field :title, id: 'title-input' %>
+            <%= f.hidden_field :image, id: 'image-input' %>
+            <%= f.hidden_field :content, id: 'content-input' %>
+            <textarea id="display-content" placeholder="Your content will appear here..."></textarea>
+
+            <% if current_user %>
+                <%= f.submit 'Save this scan', class: 'bold-third-title main-cta' %>
+            <% else %>
+                <%= link_to 'Register now to be able to save your scans', new_user_registration_path %>
+            <% end %>
+        <% end %>
+    </div>
+</div>
