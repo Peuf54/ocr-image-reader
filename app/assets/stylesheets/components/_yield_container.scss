@@ -1,5 +1,12 @@
 @import 'variables';
 
+@media (min-width: 400px) {
+    .yield-container {
+        width: 400px;
+    }
+}
+
+
 @media (min-width: 450px) {
     .yield-container {
         width: 450px;
