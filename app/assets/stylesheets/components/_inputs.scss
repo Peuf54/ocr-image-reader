@@ -8,5 +8,10 @@ input[type="text"] {
 }
 
 input[type="file"] {
-    display: none;
+    border: 2px $primary-color solid;
+    border-radius: 15px;
+    padding: 5px 15px;
+    display: block;
+    background-color: $secondary-color !important;
+    box-shadow: $shadow;
 }
