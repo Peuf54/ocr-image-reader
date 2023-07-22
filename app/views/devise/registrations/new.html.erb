@@ -1,0 +1,32 @@
+<div class="signup-container yield-container">
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'back-plate' }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <%= f.label :email, class: 'third-title' %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'third-title' %>
+      </div>
+
+    <div class="field">
+      <%= f.label :password, class: 'third-title' %>
+      <% if @minimum_password_length %>
+      <br><em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: 'third-title' %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation, class: 'third-title' %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'third-title' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: 'bold-third-title main-cta' %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+
+</div>

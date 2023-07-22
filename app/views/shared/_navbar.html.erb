@@ -1,12 +1,12 @@
 <header class="back-plate">
-    <div class="header-title">
+    <%= link_to root_path, class: 'header-title' do %>
         <div class="header-up-titles">
             <p class="bold-primary-title">OCR</p>
             <p class="third-title">Image Reader</p>
         </div>
 
         <p class="subtitle">Optical Character Recognition</p>
-    </div>
+    <% end %>
 
     <ul id="main-menu">
         <li class="main-menu-li secondary-title"><%= link_to 'New Scan', root_path %></li>
