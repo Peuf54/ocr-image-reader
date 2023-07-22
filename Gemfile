@@ -76,3 +76,5 @@ gem "cloudinary", "~> 1.26"
 gem "dotenv-rails", "~> 2.8"
 
 gem "sassc-rails", "~> 2.1"
+
+gem "devise", "~> 4.9"
