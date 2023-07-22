@@ -1,0 +1,20 @@
+<div class="yield-container index-scans-container">
+    <h2 class="bold-secondary-title">My Scans</h2>
+
+    <div class="scans-cards-container">
+        <% @scans.each do |scan| %>
+            <div class="scan-card back-plate">
+                <div class="content">
+                    <div class="texts">
+                        <p class="bold-third-title"><%= scan.title %></p>
+                        <p class="trnascriptions"><%= scan.transcriptions.truncate(500, separator: '...') %></p>
+                    </div>
+
+                    <%= cl_image_tag scan.image.key, height: 230 %>
+                </div>
+                <%= link_to 'See this scan', scan_path(scan), class: 'main-cta bold-third-title' %>
+            </div>
+        <% end %>
+    </div>
+    
+</div>

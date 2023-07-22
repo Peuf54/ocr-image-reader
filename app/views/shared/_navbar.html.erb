@@ -8,12 +8,10 @@
         <p class="subtitle">Optical Character Recognition</p>
     </div>
 
-    <nav class="yield-container">
-        <ul id="main-menu">
-            <li class="main-menu-li secondary-title"><%= link_to 'New Scan', root_path %></li>
-            <li class="main-menu-li secondary-title"><%= link_to 'My Scans', root_path %></li>
-        </ul>
-    </nav>
+    <ul id="main-menu">
+        <li class="main-menu-li secondary-title"><%= link_to 'New Scan', root_path %></li>
+        <li class="main-menu-li secondary-title"><%= link_to 'My Scans', scans_path %></li>
+    </ul>
 
     <div class="header-login-register-cta">
         <% if current_user %>

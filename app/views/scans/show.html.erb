@@ -1,0 +1,9 @@
+<div class="show-container">
+    <%= link_to 'Back to scans', scans_path, class: 'secondary-cta' %>
+    <h2 class="bold-secondary-title"><%= @scan.title %></h2>
+
+    <div class="back-plate yield-container">
+        <%= cl_image_tag @scan.image.key %>
+        <textarea class="transcription"><%= @scan.transcriptions %></textarea>
+    </div>
+</div>
