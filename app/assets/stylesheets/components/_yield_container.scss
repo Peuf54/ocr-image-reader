@@ -1,33 +1,9 @@
 @import 'variables';
 
-    .yield-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-@media (min-width: 450px) {
-    .yield-container {
-        width: 450px;
-    }
-}
-
-@media (min-width: 500px) {
-    .yield-container {
-        width: 500px;
-    }
-}
-
-@media (min-width: 768px) {
-    .yield-container {
-        width: 600px;
-    }
-}
-
-@media (min-width: 1465px) {
-    .yield-container {
-        width: 810px;
-    }
+.yield-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 810px;
 }
