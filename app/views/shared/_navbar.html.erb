@@ -1,0 +1,26 @@
+<header class="back-plate">
+    <div class="header-title">
+        <div class="header-up-titles">
+            <p class="bold-primary-title">OCR</p>
+            <p class="third-title">Image Reader</p>
+        </div>
+
+        <p class="subtitle">Optical Character Recognition</p>
+    </div>
+
+    <nav class="yield-container">
+        <ul id="main-menu">
+            <li class="main-menu-li secondary-title"><%= link_to 'New Scan', root_path %></li>
+            <li class="main-menu-li secondary-title"><%= link_to 'My Scans', root_path %></li>
+        </ul>
+    </nav>
+
+    <div class="header-login-register-cta">
+        <% if current_user %>
+            <%= link_to 'Logout', destroy_user_session_path, class: 'third-title secondary-cta', data: { turbo_method: :delete } %>
+        <% else %>
+            <%= link_to 'Register', new_user_registration_path, class: 'third-title main-cta' %>
+            <%= link_to 'Login', new_user_session_path, class: 'third-title secondary-cta' %>
+        <% end %>
+    </div>
+</header>

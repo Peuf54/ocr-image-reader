@@ -1,0 +1,115 @@
+@import 'variables';
+
+@media (min-width: 450px) {
+    .bold-primary-title {
+        font-family: Montserrat;
+        font-size: $s-fsize1;
+        font-weight: 700;
+    }
+    
+    .primary-title {
+        font-family: Montserrat;
+        font-size: $s-fsize1;
+        font-weight: 400;
+    }
+    
+    .bold-secondary-title {
+        font-family: Montserrat;
+        font-size: $s-fsize2;
+        font-weight: 700;
+    }
+    
+    .secondary-title {
+        font-family: Montserrat;
+        font-size: $s-fsize2;
+        font-weight: 400;
+    }
+    
+    .bold-third-title {
+        font-family: Montserrat;
+        font-size: $s-fsize3;
+        font-weight: 700;
+    }
+    
+    .third-title {
+        font-family: Montserrat;
+        font-size: $s-fsize3;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 830px) {
+    .bold-primary-title {
+        font-family: Montserrat;
+        font-size: $m-fsize1;
+        font-weight: 700;
+    }
+    
+    .primary-title {
+        font-family: Montserrat;
+        font-size: $m-fsize1;
+        font-weight: 400;
+    }
+    
+    .bold-secondary-title {
+        font-family: Montserrat;
+        font-size: $m-fsize2;
+        font-weight: 700;
+    }
+    
+    .secondary-title {
+        font-family: Montserrat;
+        font-size: $m-fsize2;
+        font-weight: 400;
+    }
+    
+    .bold-third-title {
+        font-family: Montserrat;
+        font-size: $m-fsize3;
+        font-weight: 700;
+    }
+    
+    .third-title {
+        font-family: Montserrat;
+        font-size: $m-fsize3;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1465px) {
+    .bold-primary-title {
+        font-family: Montserrat;
+        font-size: $l-fsize1;
+        font-weight: 700;
+    }
+    
+    .primary-title {
+        font-family: Montserrat;
+        font-size: $l-fsize1;
+        font-weight: 400;
+    }
+    
+    .bold-secondary-title {
+        font-family: Montserrat;
+        font-size: $l-fsize2;
+        font-weight: 700;
+    }
+    
+    .secondary-title {
+        font-family: Montserrat;
+        font-size: $l-fsize2;
+        font-weight: 400;
+    }
+    
+    .bold-third-title {
+        font-family: Montserrat;
+        font-size: $l-fsize3;
+        font-weight: 700;
+    }
+    
+    .third-title {
+        font-family: Montserrat;
+        font-size: $l-fsize3;
+        font-weight: 400;
+    }
+}
